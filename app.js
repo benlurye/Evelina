@@ -28,5 +28,9 @@ $(document).ready(function() {
         $('#menu_active').attr('src', 'images/menus/Dessert_Amaro_Mezcal.jpg');
     });
 
+    $("#brunch_drinks_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Brunch_Cocktails.jpg');
+    });
+
 
 })

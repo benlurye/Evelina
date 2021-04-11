@@ -75,7 +75,7 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
+nav li {
     font-size: 1.2rem;
     list-style: none;
     margin-right: 30px;
@@ -85,6 +85,11 @@ nav ul li {
 
 nav a {
     text-decoration: none;
+}
+
+nav li:hover {
+    color: rgb(203, 60, 58);
+    transition: .25s;
 }
 
 /* ORDER BUTTON */
@@ -266,6 +271,7 @@ footer a {
     margin-left: auto;
     text-align: center;
     list-style: none;
+    margin-top: 35px;
 }
 
 #menu_nav a,
