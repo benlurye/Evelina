@@ -301,3 +301,32 @@ footer a {
     border-radius: 50px;
     width: 1100px;
 }
+
+/* Hide menus by default */
+
+#brunch_link,
+#lunch_link,
+#brunch_drinks_link,
+#dinner_link {
+    display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    
+    #menu_nav,
+    #drinks_nav {
+        flex-direction: column;
+    }
+    
+    #menu_nav,
+    #drinks_nav li {
+        margin-bottom: : 10px;
+    }
+    
+    #menu_active {
+        border-radius: 0;
+        width: 100%;
+    }
+}
