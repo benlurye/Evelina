@@ -362,11 +362,12 @@ footer a {
     }
     
     .index_mobile_nav .row {
+        padding-top: 5px;
         align-items: center;
     }
     
     header {
-        margin-top: 1rem;
+        margin-top: 0;
         margin-bottom: 1rem;
         border-bottom: 1px solid rgb(203, 60, 58);;
         background-color: #000;
