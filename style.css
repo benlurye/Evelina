@@ -128,23 +128,24 @@ nav li:hover {
 .order_button {
     letter-spacing: 1.2px;
     font-size: 42px;
-    color: #000;
     padding: 25px 46px;
     border-radius: 300px;
     width: 940px;
     border-color: rgb(8, 227, 247);
-    background-color: rgb(8,227,247);
+    background-color: black;
     cursor: pointer;
     transition: .25s;
 }
 
 .order_button:hover {
-    background-color: #c1e6ed;
+    background-color: gray;
     transition: .25s;
 }
 
 .cta_order p {
-    font-size: 35px;
+/*     font-family:  */
+    font-size: 2rem;
+    font-style: italic;
 }
 
 .hero {
@@ -369,7 +370,7 @@ footer a {
     header {
         margin-top: 0;
         margin-bottom: 1rem;
-        border-bottom: 1px solid rgb(203, 60, 58);;
+        border-bottom: 1px solid rgb(8,227,247);
         background-color: #000;
         padding-bottom: 5px;
         position: sticky;
@@ -398,12 +399,17 @@ footer a {
     }
     
     
-    .hero {
-        display: none;
+    .hero img{
+        max-width: 90vw;
     }
     
-    .gallery_1 {
-        display: none;
+    .gallery_1 .row {
+           flex-direction: column;
+    }
+    
+    .img_med,
+    .img_lrg{
+        max-width: 90vw;
     }
     
     .about .row,
@@ -487,7 +493,7 @@ footer a {
     }
     
     .nav_choice p {
-        font-size: 1.2rem;
+        font-size: 2rem;
         text-transform: uppercase;
     }
     
@@ -499,14 +505,14 @@ footer a {
     #hamburger {
         cursor: pointer;
         width: 45px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 2px solid white;
         transform: translateX(25px);
     }
     
     .burger_line {
         width: 25px;
-        background-color: tan;
+        background-color: white;
         height: 2px;
         margin: 8px auto 8px auto;
     }
