@@ -10,16 +10,33 @@
 
 .row {
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
 }
 
 .vertical {
     flex-direction: column;
 }
 
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-12 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
 .col-2 {
     flex-basis: 16.6666667%;
+}
+
+.col-3 {
+    flex-basis: 25%;
 }
 
 .col-4 {
@@ -42,6 +59,10 @@
     flex-basis: 66.6666666%;
 }
 
+.col-9 {
+    flex-basis: 75%;
+}
+
 .col-10 {
     flex-basis: 83.3333333%;
 }
@@ -62,9 +83,6 @@ header {
     max-width: 1150px;
 }
 
-.index_desktop_nav {
-    display: flex;
-}
 
 .index_desktop_nav img {
     width: 184px; 
@@ -93,6 +111,10 @@ nav li:hover {
 }
 
 .index_mobile_nav {
+    display: none;
+}
+
+.gallery_3 {
     display: none;
 }
 
@@ -236,6 +258,15 @@ h2 {
     width: 211px;
 }
 
+.gallery_3 {
+    text-align: center;
+}
+
+
+.gallery_3 img {
+    max-width: 100px;
+}
+
 .gallery_2 ul li {
     list-style: none;
     margin-right: 20px;
@@ -268,13 +299,13 @@ footer a {
 
 #menu_nav, 
 #drinks_nav {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    list-style: none;
     margin-top: 35px;
+/*     border: 1px solid white; */
 }
 
 #menu_nav a,
@@ -317,18 +348,10 @@ footer a {
 /* Media Queries */
 
 @media (max-width: 800px) {
-    
-/*     div {
-        border: 1px solid white;
-    }
-     */
-    .gallery_2 {
-        text-align: center;
-    }
-    
     body {
-        overflow-x: hidden;
-    }
+        margin: 0 auto;
+    }    
+    
     
     .index_desktop_nav {
         display: none;
@@ -338,13 +361,18 @@ footer a {
         display: block;
     }
     
+    .index_mobile_nav .row {
+        align-items: center;
+    }
+    
     header {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(203, 60, 58);;
         background-color: #000;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        width: 100vw;
+        padding-bottom: 5px;
         position: sticky;
-        top: 0;
+        top: 0px;
         right: 0;
     }
     
@@ -355,11 +383,7 @@ footer a {
     #menu_nav,
     #drinks_nav {
         flex-direction: column;
-    }
-    
-    #menu_nav,
-    #drinks_nav li {
-        margin-bottom: 10px;
+/*         border: 1px solid white; */
     }
     
     #menu_active {
@@ -367,17 +391,11 @@ footer a {
         width: 100%;
     }
     
-    header {
-        margin-top: 10px;
-    }
-    
     header img {
-        width: 150px;
+        margin-left: 15px;
+        width: 120px;
     }
     
-    header ul{
-        display: none;
-    }
     
     .hero {
         display: none;
@@ -395,7 +413,6 @@ footer a {
     
     .about, .address {
         text-align: center;
-/*         border: 1px solid white; */
         width: 100%;
     }
     
@@ -416,8 +433,81 @@ footer a {
         margin-right: auto;
         margin-left: auto;
     }
-    
-    .gallery_2 img {
-        width: 95px;
+
+    .gallery_2 {
+        display: none;
     }
+    
+    .gallery_3 {
+        display: block;
+    }
+    
+    .description,
+    .address {
+        max-width: 350px;
+    }
+    
+    #menu_nav,
+    #drinks_nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #menu_nav a,
+    #drinks_nav a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2.2px;
+}
+    
+    #menu_nav .row,
+    #drinks_nav .row {
+        flex-direction: column;
+    }
+    
+    #menu_area {
+        margin-top: 15px;
+    }
+    
+/*   mobile menu   */
+    
+    .nav_choices {
+        display: none;
+        position: absolute;
+        right: 0;
+        padding-right: 40px;
+        padding-left: 10px;
+        background-color: black;  
+        border-bottom-left-radius: 20px;
+    }
+
+    .active-nav {
+        display: block;
+    }
+    
+    .nav_choice p {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    
+    .nav_choice a {
+        text-decoration: none;
+        font-size: inherit;
+    }
+    
+    #hamburger {
+        cursor: pointer;
+        width: 45px;
+        border-radius: 10px;
+        border: 2px solid white;
+        transform: translateX(25px);
+    }
+    
+    .burger_line {
+        width: 25px;
+        background-color: tan;
+        height: 2px;
+        margin: 8px auto 8px auto;
+    }
+
 }

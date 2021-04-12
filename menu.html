@@ -18,76 +18,128 @@
     <title>Evelina  |  Menu</title>
 </head>
 <body>
-    <header>
-        <nav class="index_desktop_nav">
-            <img class="col-2" src="images/logo1.gif">
-            
-            <div class="col-6">
-
-                <!-- LEFT EMPTY FOR EASY SPACING -->
-
-            </div>
-            
-            <ul class="col-4">
+    <header class="index_desktop_nav">
+        <nav>
+            <div class="row">
                 <a href="index.html">
-                    <li>home</li>
+                    <img class="col-2" src="images/logo1.gif">
                 </a>
+                <div class="col-6">
 
-                <a href="https://evelinabk.square.site/s/order" target="_blank">
-                    <li>order</li>
-                </a>
-                
-                <a href="https://resy.com/cities/ny/evelina?date=2019-08-15&seats=2" target="_blank">
-                    <li>reservations</li>
-                </a>
-                
-                <a href="https://www.instagram.com/evelinarestaurant/" target="_blank">
-                    <li>instagram</li>
-                </a>
+                    <!-- LEFT EMPTY FOR EASY SPACING -->
 
-                <a href="mailto:evelinabk@gmail.com">
-                    <li>email</li>
-                </a>
-            </ul>
+                </div>
+                
+                <ul class="col-4">
+                    <a href="index.html">
+                        <li>home</li>
+                    </a>
+
+                    <a href="#order">
+                        <li>order</li>
+                    </a>
+                    
+                    <a href="https://resy.com/cities/ny/evelina?date=2019-08-15&seats=2" target="_blank">
+                        <li>reservations</li>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/evelinarestaurant/" target="_blank">
+                        <li>instagram</li>
+                    </a>
+
+                    <a href="mailto:evelinabk@gmail.com">
+                        <li>email</li>
+                    </a>
+                </ul>
+            </div>
         </nav>
-    </header>
-        <ul class="menu_links" id="menu_nav">
-            
-            <li>
-                <a id="lunch_link">Lunch</a>
-            </li>
-            
-            <li>
-                <a id="brunch_link">Brunch</a>
-            </li>
-            
-            <li>
-                <a id="dinner_link">Dinner</a>
-            </li>
-            
-            <li>
-                <a id="dessert_digestifs_link">Dessert | Mezcal | Amaro</a>
-            </li>
-        </ul>
-        <ul class="menu_links" id="drinks_nav">
-            
-            <li>
-                <a id="cocktails_link">Cocktails</a>
-            </li>
-            
-            <li>
-                <a id="BTG_link">Wine by the Glass | Beer</a>
-            </li>
-            
-            <li>
-                <a id="BTB_link">Wine by the Bottle</a>
-            </li>
-            
-            <li>
-                <a id="brunch_drinks_link">Brunch Cocktails | Coffee</a>
-            </li>
 
-        </ul>
+    </header>
+    
+    <header class="index_mobile_nav">
+        <div class="row">
+            <div class="col-9">
+                <img  src="images/logo1.gif">
+            </div>
+            <div class="col-3">
+                <div id="hamburger">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_choices">
+            <div class="nav_choice">
+                <p>
+                    <a href="index.html">home</a>
+                </p>
+            </div>
+            <div class="nav_choice">
+                <p>
+                    <a href="https://evelinabk.square.site/s/order" target="_blank">order online</a>
+                </p>
+            </div>
+            <div class="nav_choice">
+                <p>
+                    <a href="https://resy.com/cities/ny/evelina" target="_blank">reservations</a>
+                </p>
+            </div>
+            <div class="nav_choice">
+                <p>
+                    <a href="https://www.instagram.com/evelinarestaurant/" target="_blank">instagram</p>
+            </div>
+            <div class="nav_choice">
+                <p>
+                    <a href="mailto:evelinabk@gmail.com">contact</a>
+                </p>
+            </div>
+        </div>
+</header>
+        
+        <!-- FOOD -->
+        <div class="menu_links" id="menu_nav">
+            <div class="row">
+
+                <div class="col-3">
+                    <a id="lunch_link">Lunch</a>
+                </div>
+                
+                <div class="col-3">
+                    <a id="brunch_link">Brunch</a>
+                </div>
+                
+                <div class="col-3">
+                    <a id="dinner_link">Dinner</a>
+                </div>
+                
+                <div class="col-3">
+                    <a id="dessert_digestifs_link">Dessert | Mezcal | Amaro</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu_links" id="drinks_nav">
+            <div class="row">
+                <div class="col-3">
+                    <a id="cocktails_link">Cocktails</a>
+                </div>
+
+                <div class="col-3">
+                    <a id="BTG_link">Wine by the Glass | Beer</a>
+                </div>
+                
+                <div class="col-3">
+                    <a id="BTB_link">Wine by the Bottle</a>
+                </div>
+                
+                <div class="col-3">
+                    <a id="brunch_drinks_link">Brunch Cocktails | Coffee</a>
+                </div>
+        </div>
+        </div>
 
         <div id="menu_area">
             <img id="menu_active" src="images/menus/Cocktails.jpg">

@@ -10,68 +10,132 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
 
+
+    <script src="vendor/jquery.js"></script>
+    <script src="app.js"></script>
+
     <title>Evelina</title>
 </head>
 <body>
-    <header>
-        <nav class="index_desktop_nav">
-            <img class="col-2" src="images/logo1.gif">
-            
-            <div class="col-6">
+    <header class="index_desktop_nav">
+        <nav>
+            <div class="row">
+                <img class="col-2" src="images/logo1.gif">
+                
+                <div class="col-6">
 
-                <!-- LEFT EMPTY FOR EASY SPACING -->
+                    <!-- LEFT EMPTY FOR EASY SPACING -->
 
+                </div>
+                
+                <ul class="col-4">
+                    <a href="menu.html">
+                        <li>menu</li>
+                    </a>
+
+                    <a href="#order">
+                        <li>order</li>
+                    </a>
+                    
+                    <a href="https://resy.com/cities/ny/evelina?date=2019-08-15&seats=2" target="_blank">
+                        <li>reservations</li>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/evelinarestaurant/" target="_blank">
+                        <li>instagram</li>
+                    </a>
+
+                    <a href="mailto:evelinabk@gmail.com">
+                        <li>email</li>
+                    </a>
+                </ul>
             </div>
-            
-            <ul class="col-4">
-                <a href="menu.html">
-                    <li>menu</li>
-                </a>
-
-                <a href="#order">
-                    <li>order</li>
-                </a>
-                
-                <a href="https://resy.com/cities/ny/evelina?date=2019-08-15&seats=2" target="_blank">
-                    <li>reservations</li>
-                </a>
-                
-                <a href="https://www.instagram.com/evelinarestaurant/" target="_blank">
-                    <li>instagram</li>
-                </a>
-
-                <a href="mailto:evelinabk@gmail.com">
-                    <li>email</li>
-                </a>
-            </ul>
         </nav>
 
-        <div class="index_mobile_nav">
-            
-            <img src="images/logo1.gif">
-            
-        </div>
+    </header>
+    
+    <header class="index_mobile_nav">
+            <div class="row">
+                <div class="col-9">
+                    <img  src="images/logo1.gif">
+                </div>
+                <div class="col-3">
+                    <div id="hamburger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_choices">
+                <div class="nav_choice">
+                    <p>
+                        <a href="menu.html">menu</a>
+                    </p>
+                </div>
+                <div class="nav_choice">
+                    <p>
+                        <a href="https://evelinabk.square.site/s/order" target="_blank">order online</a>
+                    </p>
+                </div>
+                <div class="nav_choice">
+                    <p>
+                        <a href="https://resy.com/cities/ny/evelina" target="_blank">reservations</a>
+                    </p>
+                </div>
+                <div class="nav_choice">
+                    <p>
+                        <a href="https://www.instagram.com/evelinarestaurant/" target="_blank">instagram</p>
+                </div>
+                <div class="nav_choice">
+                    <p>
+                        <a href="mailto:evelinabk@gmail.com">contact</a>
+                    </p>
+                </div>
+            </div>
     </header>
 
-    <div class="gallery_2">
+    <div class="gallery_2 hide_me">
         <ul>
+            
             <li>
-                <img class="hide_me" src="images/blossoms.jpeg" alt="Zucchini Blossoms">
+                <img src="images/blossoms.jpeg" alt="Zucchini Blossoms">
             </li>
+            
             <li>
                 <img src="images/IMG_1978.jpeg" alt="A delicious spread">
             </li>
+            
             <li>
                 <img src="images/lady_macbeth.jpeg" alt="Lady Macbeth Bloody Mary">
             </li>
+            
             <li>
                 <img src="images/tiramisu.jpeg" alt="Homemade Tiramisu">
             </li>
+            
             <li>
-                <img class="hide_me" src="images/yummy_dish.jpeg" alt="Fregola Sarda, Arctic Char, Artichokes">
+                <img src="images/yummy_dish.jpeg" alt="Fregola Sarda, Arctic Char, Artichokes">
             </li>
             
         </ul>
+    </div>
+
+    <div class="gallery_3">
+        <div class="row">            
+            <div class="col-4">
+                <img src="images/IMG_1978.jpeg" alt="A delicious spread">
+            </div>
+            
+            <div class="col-4">
+                <img src="images/lady_macbeth.jpeg" alt="Lady Macbeth Bloody Mary">
+            </div>
+            
+            <div class="col-4">
+                <img src="images/tiramisu.jpeg" alt="Homemade Tiramisu">
+            </div>
+                   
+        </div>
     </div>
 
     

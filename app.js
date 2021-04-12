@@ -15,7 +15,7 @@ $(document).ready(function() {
         $('#lunch_link').show();
     } 
     // Display dinner menu
-    else if (Now.getHours()>16) {
+    else if (Now.getHours()>=16) {
     $('#dinner_link').show();
     } 
     
@@ -54,5 +54,23 @@ $(document).ready(function() {
         $('#menu_active').attr('src', 'images/menus/Brunch_Cocktails.jpg');
     });
 
+// mobile menu
+
+var $mobileNav = $(".nav_choices");
+var $mobileLinks = $(".nav_choice");
+var $hamburger = $("#hamburger");
+
+// hamburger navigation effect
+$hamburger.on("click", function(e) {
+  $hamburger.toggleClass("is-active");
+
+  // open/close menu
+  $mobileNav.toggleClass("active-nav");
+});
+
+// mobile links dissapear on link click/tap
+$mobileLinks.on("click", function(e) {
+  $mobileNav.toggleClass("active-nav");
+});
     
 })
