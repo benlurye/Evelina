@@ -351,6 +351,8 @@ footer a {
 
 span {
     color: rgb(203, 60, 58);
+    font-size: inherit;
+    font-family: inherit;
 }
 
 /* Media Queries */
