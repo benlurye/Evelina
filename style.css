@@ -148,7 +148,7 @@ nav li:hover {
 
 .cta_order p {
 /*     font-family:  */
-    font-size: 2rem;
+    font-size: 2rem;    
     font-style: italic;
 }
 
@@ -351,8 +351,8 @@ footer a {
 
 span {
     color: rgb(203, 60, 58);
-    font-size: inherit;
-    font-family: inherit;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
 }
 
 /* Media Queries */
