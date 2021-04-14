@@ -33,6 +33,7 @@
 
 .col-2 {
     flex-basis: 16.6666667%;
+    max-height: 47px; /*fixes weird sizing of logo on iPads*/
 }
 
 .col-3 {
@@ -341,9 +342,12 @@ footer a {
 
 #brunch_link,
 #lunch_link,
-#brunch_drinks_link,
-#dinner_link {
+#brunch_drinks_link {
     display: none;
+}
+
+span {
+    color: rgb(203, 60, 58);
 }
 
 /* Media Queries */
