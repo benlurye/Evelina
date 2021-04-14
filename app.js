@@ -14,10 +14,10 @@ $(document).ready(function() {
     else if ((CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5) && Now.getHours()< 16) {
         $('#lunch_link').show();
     } 
-    // Display dinner menu
-    else if (Now.getHours()>=16) {
-    $('#dinner_link').show();
-    } 
+    // // Display dinner menu
+    // else if (Now.getHours()>=16) {
+    // $('#dinner_link').show();
+    // } 
     
 
     // click on links to display different menus
