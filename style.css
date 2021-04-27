@@ -167,6 +167,11 @@ h4 {
     text-transform: uppercase;
 }
 
+.bio p span {
+    font-size: inherit;
+    color:rgb(8, 227, 247);
+}
+
 .address {
     margin-right: auto;
     margin-left: auto;
