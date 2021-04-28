@@ -1,23 +1,23 @@
 $(document).ready(function() {
 
-    // Display correct links based on day of week
+    // // Display correct links based on day of week
 
-    var Now = new Date();
-    var CurrentDay = Now.getDay();
+    // var Now = new Date();
+    // var CurrentDay = Now.getDay();
 
-    // Display brunch menu and brunch drinks menu
-    if ((CurrentDay == 0 || CurrentDay == 6) && Now.getHours()< 16) {
-        $('#brunch_link').show();
-        $('#brunch_drinks_link').show();
-    } 
-    // Display lunch menu
-    else if ((CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5) && Now.getHours()< 16) {
-        $('#lunch_link').show();
-    } 
-    // // Display dinner menu
-    // else if (Now.getHours()>=16) {
-    // $('#dinner_link').show();
+    // // Display brunch menu and brunch drinks menu
+    // if ((CurrentDay == 0 || CurrentDay == 6) && Now.getHours()< 16) {
+    //     $('#brunch_link').show();
+    //     $('#brunch_drinks_link').show();
     // } 
+    // // Display lunch menu
+    // else if ((CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5) && Now.getHours()< 16) {
+    //     $('#lunch_link').show();
+    // } 
+    // // // Display dinner menu
+    // // else if (Now.getHours()>=16) {
+    // // $('#dinner_link').show();
+    // // } 
     
 
     // click on links to display different menus
