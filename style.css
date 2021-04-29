@@ -345,13 +345,14 @@ footer a {
     width: 1100px;
 }
 
+
 /* Hide time-conditional menus by default */
 
-#brunch_link,
+/* #brunch_link,
 #lunch_link,
 #brunch_drinks_link {
     display: none;
-}
+} */
 
 span {
     color: rgb(203, 60, 58);
@@ -469,6 +470,8 @@ span {
     
     #menu_nav,
     #drinks_nav {
+        margin-left: 5px;
+        margin-right: 5px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -478,11 +481,19 @@ span {
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: 2.2px;
-}
+    }
     
-    #menu_nav .row,
     #drinks_nav .row {
         flex-direction: column;
+        line-height: 2rem; 
+    }
+    
+    #menu_nav .row {
+        flex-wrap: wrap;
+    }
+    
+    #coming_soon {
+        margin: -2px 0px 0px 0px; 
     }
     
     #menu_area {
@@ -495,10 +506,12 @@ span {
         display: none;
         position: absolute;
         right: 0;
-        padding-right: 40px;
-        padding-left: 10px;
-        background-color: black;  
+        margin-top: 6px;
+        padding: 0 40px 400px 10px;
+        background-color: rgba(0, 0, 0, .85);  
         border-bottom-left-radius: 20px;
+        border-bottom: 1px solid rgb(8, 227, 247);
+        border-left: 1px solid rgb(8, 227, 247);
     }
 
     .active-nav {
