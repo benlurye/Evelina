@@ -336,6 +336,10 @@ footer a {
     transition: .25s;
 }
 
+#breakfast_link {
+    opacity: .3;
+}
+
 #menu_area {
     margin-top: 50px;
     text-align: center;    
@@ -345,14 +349,18 @@ footer a {
     width: 1100px;
 }
 
+#mobile_food_and_drinks {
+    display: none;
+}
+
 
 /* Hide time-conditional menus by default */
 
-/* #brunch_link,
+#brunch_link,
 #lunch_link,
 #brunch_drinks_link {
     display: none;
-} */
+}
 
 span {
     color: rgb(203, 60, 58);
@@ -372,8 +380,17 @@ span {
         display: none;
     }
     
-    .index_mobile_nav {
+    .index_mobile_nav,
+    #mobile_food_and_drinks {
         display: block;
+        margin-bottom: 0;
+    }
+    
+    #mobile_food_and_drinks h5 {
+        text-align: center;
+        border: 1px solid green;
+        margin-top: 0;
+        font-size: 2rem;
     }
     
     .index_mobile_nav .row {
@@ -396,11 +413,10 @@ span {
         display: none;
     }
     
-    #menu_nav,
-    #drinks_nav {
-        flex-direction: column;
-/*         border: 1px solid white; */
+    #mobile_menu_links{
+        display: block;
     }
+    
     
     #menu_active {
         border-radius: 0;
@@ -472,7 +488,7 @@ span {
     #drinks_nav {
         margin-left: 5px;
         margin-right: 5px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
     
@@ -480,7 +496,7 @@ span {
     #drinks_nav a {
     text-transform: uppercase;
     font-size: 1.5rem;
-    letter-spacing: 2.2px;
+    letter-spacing: 2.5px;
     }
     
     #drinks_nav .row {
