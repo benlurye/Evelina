@@ -356,11 +356,11 @@ footer a {
 
 /* Hide time-conditional menus by default */
 
-#brunch_link,
+/* #brunch_link,
 #lunch_link,
 #brunch_drinks_link {
     display: none;
-}
+} */
 
 span {
     color: rgb(203, 60, 58);
