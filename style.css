@@ -299,36 +299,53 @@ footer a {
     font-size: inherit;
 }
 
-
 /* MENU */
 
 #menu_nav {
     margin-top: 50px;
     margin-bottom: 20px;
+/*     border: 1px solid blue; */
 }
 
 #menu_nav, 
-#drinks_nav {
-    width: 100%;
-    max-width: 1300px;
+#drinks_nav,
+#brunch_nav,
+.breakfast_temp {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    margin-top: 35px;
-/*     border: 1px solid white; */
+    margin-top: 20px;
+}
+
+#drinks_nav {
+    width: 100%;
+    max-width: 850px;
+}
+
+#menu_nav,
+#brunch_nav {
+    width: 100%;
+    max-width: 400px;
+}
+
+#menu_nav .row,
+#brunch_nav .row,
+#drinks_nav .row {
+    justify-content: space-evenly;
 }
 
 #menu_nav a,
-#drinks_nav a {
+#drinks_nav a,
+#brunch_nav a,
+.breakfast_temp a{
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 2.2px;
     transition: .25s;
 }
 
 #menu_nav a:hover,
 #drinks_nav a:hover {
-    cursor: crosshair;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
@@ -338,6 +355,10 @@ footer a {
 
 #breakfast_link {
     opacity: .3;
+}
+
+#coming_soon {
+    margin-top: 0;
 }
 
 #menu_area {
@@ -353,10 +374,10 @@ footer a {
     text-align: center;
     font-size: 3rem;
     font-style: italic;
-    font-family: 'Bodoni Moda', serif;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     font-weight: 600;
+    color: rgb(8, 227, 247);
 }
 
 #mobile_food_and_drinks {
@@ -456,7 +477,8 @@ span {
         flex-direction: column;
     }
     
-    .about, .address {
+    .about, 
+    .address {
         text-align: center;
         width: 100%;
     }
@@ -500,6 +522,13 @@ span {
         margin-bottom: 10px;
     }
     
+    #menu_nav .row,
+    #drinks_nav .row,
+    #brunch_nav .row {
+        align-items: center;
+    }
+   
+        
     #menu_nav a,
     #drinks_nav a {
     text-transform: uppercase;
