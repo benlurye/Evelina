@@ -61,6 +61,7 @@ $(document).ready(function() {
 
     $("#brunch_drinks_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Brunch_Cocktails.jpg');
+        $('#menu_avail_hours').css('display', 'none');
     });
 
 // mobile menu
