@@ -349,6 +349,16 @@ footer a {
     width: 1100px;
 }
 
+#menu_avail_hours {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Bodoni Moda', serif;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
 #mobile_food_and_drinks {
     display: none;
 }
@@ -356,11 +366,9 @@ footer a {
 
 /* Hide time-conditional menus by default */
 
-/* #brunch_link,
-#lunch_link,
-#brunch_drinks_link {
+#menu_avail_hours {
     display: none;
-} */
+}
 
 span {
     color: rgb(203, 60, 58);
@@ -510,6 +518,10 @@ span {
     
     #coming_soon {
         margin: -2px 0px 0px 0px; 
+    }
+    
+    #menu_avail_hours {
+        font-size: 1.5rem;
     }
     
     #menu_area {
