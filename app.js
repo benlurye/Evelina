@@ -18,6 +18,10 @@ $(document).ready(function() {
     // if (Now.getHours()>=16) {
     // $('#dinner_link').show();
     // } 
+
+    function hideMenu(menuToHide) {
+        $(menuToHide).css('display', 'none');
+    }
     
 
     // click on links to display different menus
@@ -26,6 +30,7 @@ $(document).ready(function() {
         $('#menu_active').attr('src', 'images/menus/Lunch.jpg');
         $('#menu_avail_hours').css('display', 'block');
         $('#menu_avail_hours').text('Served M-F');
+        hideMenu('#menu_active_2');
     });
 
     $("#brunch_link").on("click", function () {
@@ -34,34 +39,47 @@ $(document).ready(function() {
         $('#menu_avail_hours').text('Served Sat-Sun');
     });
 
+    $("#special_menu_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Special_Brunch.jpg');
+        $('#menu_active_2').css('display', 'block');
+        $('#menu_active_2').attr('src', 'images/menus/Special_Dinner.jpg');
+        $('#menu_avail_hours').css('display', 'none');
+    });
+
     $("#dinner_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Dinner.jpg');
         $('#menu_avail_hours').css('display', 'none');
+        hideMenu('#menu_active_2');
     });
 
     $("#cocktails_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Cocktails.jpg');
         $('#menu_avail_hours').css('display', 'none');
+        hideMenu('#menu_active_2');
     });
 
     $("#BTG_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/WBTG_Beer.jpg');
         $('#menu_avail_hours').css('display', 'none');
+        hideMenu('#menu_active_2');
     });
 
     $("#BTB_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Wine_BTB.jpg');
         $('#menu_avail_hours').css('display', 'none');
+        hideMenu('#menu_active_2');
     });
 
     $("#dessert_digestifs_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Dessert_Amaro_Mezcal.jpg');
         $('#menu_avail_hours').css('display', 'none');
+        hideMenu('#menu_active_2');
     });
 
     $("#brunch_drinks_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Brunch_Cocktails.jpg');
         $('#menu_avail_hours').css('display', 'none');
+        hideMenu('#menu_active_2');
     });
 
 // mobile menu
