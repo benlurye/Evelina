@@ -96,6 +96,7 @@ $hamburger.on("click", function(e) {
   $mobileNav.toggleClass("active-nav");
 });
 
+
 // mobile links dissapear on link click/tap
 $mobileLinks.on("click", function(e) {
   $mobileNav.toggleClass("active-nav");

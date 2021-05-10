@@ -322,6 +322,10 @@ footer a:hover {
     margin-top: 20px;
 }
 
+.breakfast_temp {
+    margin-top: 10px;
+}
+
 #drinks_nav {
     width: 100%;
     max-width: 850px;
@@ -361,6 +365,8 @@ footer a:hover {
 
 #breakfast_link {
     opacity: .3;
+    z-index: -1;
+    position: relative;
 }
 
 #coming_soon {
@@ -525,14 +531,6 @@ span {
         max-width: 350px;
     }
     
-    #menu_nav,
-    #drinks_nav {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    
     #menu_nav .row,
     #drinks_nav .row,
     #brunch_nav .row {
@@ -573,13 +571,12 @@ span {
     .nav_choices {
         display: none;
         position: absolute;
-        right: 0;
-        margin-top: 6px;
-        padding: 0 40px 400px 10px;
-        background-color: rgba(0, 0, 0, .85);  
-        border-bottom-left-radius: 20px;
-        border-bottom: 1px solid rgb(8, 227, 247);
-        border-left: 1px solid rgb(8, 227, 247);
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        height: 95vh;
+        background-color: rgba(0, 0, 0, .95);  
+        border: 2px solid rgb(8, 227, 247);
     }
 
     .active-nav {
@@ -610,7 +607,4 @@ span {
         height: 2px;
         margin: 8px auto 8px auto;
     }
-    
-    
-
 }
