@@ -1,19 +1,19 @@
 $(document).ready(function() {
 
-    // // Display correct links based on day of week
+    // // Determine day of week and time for menu availability purposes
 
-    // var Now = new Date();
-    // var CurrentDay = Now.getDay();
+    var Now = new Date();
+    var CurrentDay = Now.getDay();
 
     // // Display brunch menu and brunch drinks menu
     // if ((CurrentDay == 0 || CurrentDay == 6) && Now.getHours()< 16) {
     //     $('#brunch_link').show();
     //     $('#brunch_drinks_link').show();
     // } 
-    // // Display lunch menu
-    // if ((CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5) && Now.getHours()< 16) {
-    //     $('#lunch_link').show();
-    // } 
+    // Dim lunch menu link to make it clearer that this is not available right now
+    if ((CurrentDay == 0 || CurrentDay == 6) && Now.getHours()< 16) {
+        $('#lunch_link').css('opacity', '.75');
+    } 
     // // Display dinner menu
     // if (Now.getHours()>=16) {
     // $('#dinner_link').show();
