@@ -13,6 +13,7 @@ $(document).ready(function() {
     // Dim lunch menu link to make it clearer that this is not available right now
     if ((CurrentDay == 0 || CurrentDay == 6) && Now.getHours()< 16) {
         $('#lunch_link').css('opacity', '.75');
+        $('#breakfast_link').css('opacity', '.75');
     } 
     // // Display dinner menu
     // if (Now.getHours()>=16) {
@@ -25,6 +26,13 @@ $(document).ready(function() {
     
 
     // click on links to display different menus
+    $("#breakfast_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Breakfast.jpg');
+        $('#menu_avail_hours').css('display', 'block');
+        $('#menu_avail_hours').text('Served M-F');
+        hideMenu('#menu_active_2');
+    });
+
 
     $("#lunch_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Lunch.jpg');
@@ -78,7 +86,8 @@ $(document).ready(function() {
 
     $("#brunch_drinks_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Brunch_Cocktails.jpg');
-        $('#menu_avail_hours').css('display', 'none');
+        $('#menu_avail_hours').css('display', 'block');
+        $('#menu_avail_hours').text('Served Sat-Sun');
         hideMenu('#menu_active_2');
     });
 
