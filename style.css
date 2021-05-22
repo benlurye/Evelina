@@ -431,6 +431,10 @@ span {
         align-items: center;
     }
     
+    .index_mobile_nav {
+        z-index: 1;
+    }
+    
     header {
         margin-top: 0;
         margin-bottom: 1rem;
