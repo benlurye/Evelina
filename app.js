@@ -6,31 +6,12 @@ $(document).ready(function() {
     var CurrentDay = Now.getDay();
 
  
-    // Dim morning menus links to make it clearer what is available right now
-    if ((Now.getHours()<12 && CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5)) {
-        $('#lunch_link').css('opacity', '.5');
-    };
-    
-    if (Now.getHours()<14) {
-        $('#dinner_link').css('opacity', '.5');
-    };
+    // Dim breakfast/lunch links on weekend
     
     if ((CurrentDay == 0 || CurrentDay == 6) && Now.getHours()< 16) {
         $('#lunch_link').css('opacity', '.5');
         $('#breakfast_link').css('opacity', '.5');
     };
-    
-    if ((Now.getHours()<16 && CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5)) {
-        $('#brunch_link').css('opacity', '.5');
-        $('#brunch_drinks_link').css('opacity', '.5');
-    };
-
-    if ((Now.getHours()>12 && CurrentDay == 1 || CurrentDay == 2 || CurrentDay == 3 || CurrentDay == 4 || CurrentDay == 5)) {
-        $('#breakfast_link').css('opacity', '.5');
-    };
-
-    
-
 
     function hideMenu(menuToHide) {
         $(menuToHide).css('display', 'none');
@@ -41,7 +22,7 @@ $(document).ready(function() {
     $("#breakfast_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Breakfast.jpg');
         $('#menu_avail_hours').css('display', 'block');
-        $('#menu_avail_hours').text('Served Mon-Fri | 8 AM-12 PM');
+        $('#menu_avail_hours').text('Served Mon-Fri | 8 AM-11:30 AM');
         hideMenu('#menu_active_2');
     });
 
