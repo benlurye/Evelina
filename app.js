@@ -60,19 +60,19 @@ $(document).ready(function() {
     });
 
     $("#BTG_link").on("click", function () {
-        $('#menu_active').attr('src', 'images/menus/WBTG_Beer.jpg');
+        $('#menu_active').attr('src', 'images/menus/WBTG.jpg');
         $('#menu_avail_hours').css('display', 'none');
         hideMenu('#menu_active_2');
     });
 
     $("#BTB_link").on("click", function () {
-        $('#menu_active').attr('src', 'images/menus/Wine_BTB.jpg');
+        $('#menu_active').attr('src', 'images/menus/WBTB.jpg');
         $('#menu_avail_hours').css('display', 'none');
         hideMenu('#menu_active_2');
     });
 
     $("#dessert_digestifs_link").on("click", function () {
-        $('#menu_active').attr('src', 'images/menus/Dessert_Amaro_Mezcal.jpg');
+        $('#menu_active').attr('src', 'images/menus/Dolci.jpg');
         $('#menu_avail_hours').css('display', 'none');
         hideMenu('#menu_active_2');
     });
