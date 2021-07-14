@@ -226,14 +226,14 @@ strong {
     .hide-me {
         position: fixed;
         bottom: -100px; 
-        transition: .5s;
+        transition: 1s;
     }
 
     .observer_target {
         position: absolute;
         width: 10px;
         height: 10px;
-        background-color: green;
+        /* background-color: green; */
         bottom: -100px;
         right: 0;
     }
