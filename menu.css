@@ -1,0 +1,246 @@
+.live-submenu {
+    max-width: 90%;
+}
+
+#current_date {
+    margin: 0 auto 10px auto;
+    width: fit-content;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Sacramento', cursive;
+    color: #aee7ec;
+}
+
+.current_menu {
+    padding: 15px;
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.current_menu h5 {
+    color: #c90001;
+    width: fit-content;
+    margin: 20px auto 0px auto;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Sacramento', cursive;
+}
+
+#cocktails h5,
+#wbtg h5,
+#wbtb h5 {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: #aee7ec;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.current_menu h6 {
+    color: #aee7ec;
+    text-transform: uppercase;
+    font-size: 3rem;
+    width: fit-content;
+    margin: 20px auto 10px 20px;
+    -webkit-text-stroke: 1px gray;
+}
+
+.current_menu p {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: black;
+    width: fit-content;
+    margin-left: 40px;
+}
+
+.right-align {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-price {
+    color: black;
+    align-self: center;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#brunch_drinks .live-menu-item strong,
+#wbtg .live-menu-item strong,
+#wbtb .live-menu-item strong {
+    font-style:  normal;
+    margin-left: 30px;
+}
+
+.row {
+    align-items: center;
+    height: 30px;
+}
+
+.wine-desc p {
+    margin-left: unset;
+}
+
+.live-menu {
+    background-image: url(images/floortile_vertical.jpg);
+    background-repeat-x: no-repeat;
+    background-position: right top;
+    background-size: 100px;
+    position: relative;
+    display: none;
+}
+
+.live-submenu {
+    margin: 0 auto;
+}
+
+.active-menu {
+    display: block;
+}
+
+.active {
+    display: block;
+}
+
+.price_guide {
+    color: #c90001;
+    text-transform: uppercase;
+    margin: 10px auto 10px 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#wbtg_price_guide {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.served_on p {
+    margin: 5px auto;
+    font-size: 1.2rem;
+}
+
+.food_warning {
+    margin-top: 30px;
+}
+
+.food_warning p {
+    font-size: 1rem;
+}
+
+strong {
+    font-size: inherit;
+    color: inherit;
+    font-style: normal;
+}
+
+@media (max-width: 800px) { 
+
+    h5, h6, p {
+        z-index: 2;        
+    }
+
+    #cocktails h5,
+    #wbtb h5,
+    #wbtg h5 {
+        -webkit-text-stroke: 1px gray;
+    }
+
+    #brunch_drinks .live-menu-item strong,
+    #wbtg .live-menu-item strong,
+    #wbtb .live-menu-item strong {
+        font-style:  normal;
+        margin-left: unset;
+    }
+
+    .current_menu {
+        max-width: 95vw;
+        text-align: center;
+    }
+
+    .current_menu p {
+        margin: 15px auto
+    }
+
+    #cocktails h5,
+    #wbtg h5,
+    #wbtb h5,
+    .current_menu h6 {
+        margin: 20px auto;
+    }
+
+    .price_guide {
+        font-size: 1.8rem;
+        margin: 20px auto;
+        z-index: 1;
+    }
+
+    #wbtg_price_guide {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #current_date {
+        font-size: 3.4rem;
+/*         border: 1px solid black; */
+    }
+
+    .live-submenu .row {
+        margin: 0 auto;
+        flex-direction: column;
+        margin-top: 10px;   
+    }
+
+    .row {
+        height: unset;
+    }
+
+    .item-price {
+        margin: -10px;
+    }
+
+    .live-menu {
+        background-size: 70px;
+    }
+
+    .top_anchor {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        background-color: goldenrod;
+        border-radius: 10px;
+        -webkit-box-shadow: -7px 5px 15px -3px #000000; 
+        box-shadow: -7px 5px 15px -3px #000000;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .hide-me {
+        position: fixed;
+        bottom: -100px; 
+        transition: .5s;
+    }
+
+    .observer_target {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        bottom: -100px;
+        right: 0;
+    }
+
+    .arrow {
+        width: 75%;
+        transform: translateY(15%);
+    }
+
+}
