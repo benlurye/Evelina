@@ -207,7 +207,7 @@ strong {
 
     .live-menu {
         background-size: 70px;
-        background-repeat: repeat-y;
+        background-repeat: no-repeat repeat;
     }
 
     .top_anchor {
