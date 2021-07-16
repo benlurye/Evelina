@@ -88,7 +88,7 @@
 
 .live-menu {
     background-image: url(images/floortile_vertical.jpg);
-    background-repeat-x: no-repeat;
+    background-repeat: no-repeat;
     background-position: right top;
     background-size: 100px;
     position: relative;
@@ -207,6 +207,7 @@ strong {
 
     .live-menu {
         background-size: 70px;
+        background-repeat: no-repeat repeat;
     }
 
     .top_anchor {
