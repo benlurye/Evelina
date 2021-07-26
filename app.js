@@ -40,10 +40,8 @@ $(document).ready(function() {
         $('#menu_avail_hours').text('Served Sat-Sun');
     });
 
-    $("#special_menu_link").on("click", function () {
-        $('#menu_active').attr('src', 'images/menus/Special_Brunch.jpg');
-        $('#menu_active_2').css('display', 'block');
-        $('#menu_active_2').attr('src', 'images/menus/Special_Dinner.jpg');
+    $("#between_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Between.jpg');
         $('#menu_avail_hours').css('display', 'none');
     });
 
