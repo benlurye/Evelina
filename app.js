@@ -45,6 +45,11 @@ $(document).ready(function() {
         $('#menu_avail_hours').css('display', 'none');
     });
 
+    $("#special_menu_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Thanksgiving.jpg');
+        $('#menu_avail_hours').css('display', 'none');
+    });
+
     $("#dinner_link").on("click", function () {
         $('#menu_active').attr('src', 'images/menus/Dinner.jpg');
         $('#menu_avail_hours').css('display', 'none');
