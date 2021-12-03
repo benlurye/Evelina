@@ -332,6 +332,10 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
+.embedsocial-hashtag {
+    border: 1px solid white;
+}
+
 #menu_nav, 
 #drinks_nav,
 #brunch_nav {
@@ -419,6 +423,24 @@ span {
     font-size: 1.5rem;
     font-weight: bolder;
     font-family: "Lato", sans-serif;
+}
+
+.video_box {
+    justify-content: space-around;
+    margin: 20px auto 0 auto;
+}
+
+.video_box video {
+    max-width: 15%;
+}
+
+.insta-logo {
+    transform: translateY(25%);
+    margin-right: 10px;
+}
+
+.insta-logo {
+    width: 20px;
 }
 
 /* Media Queries */
@@ -577,6 +599,10 @@ span {
     
     #menu_area {
         margin-top: 15px;
+    }
+
+    .video_box video {
+        max-width: 12%;
     }
     
 /*   mobile menu   */

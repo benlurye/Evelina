@@ -106,5 +106,28 @@ $hamburger.on("click", function(e) {
 $mobileLinks.on("click", function(e) {
   $mobileNav.toggleClass("active-nav");
 });
+
+// const video1 = document.getElementById("video1");
+// const video2 = document.getElementById("video2");
+// const video3 = document.getElementById("video3");
+
+// video1.addEventListener('ended', function() {
+//     video1.style.display = "none";     
+// });
+
+// video2.addEventListener("timeupdate", function(){
+//     if(this.currentTime = 3) {
+//         this.pause();
+//     }
+
+// // video2.addEventListener('ended', function() {
+// //     video2.style.display = "none";     
+// // });
+
+// video3.addEventListener('ended', function() {
+//     video3.style.display = "none";
+// });
+
+
     
 })
