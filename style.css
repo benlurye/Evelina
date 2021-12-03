@@ -602,8 +602,8 @@ span {
     }
 
     .video_box video {
-    max-width: 33%;
-}
+        max-width: 12%;
+    }
     
 /*   mobile menu   */
     
