@@ -435,11 +435,6 @@ span {
 }
 
 .insta-logo {
-    transform: translateY(25%);
-    margin-right: 10px;
-}
-
-.insta-logo {
     width: 20px;
 }
 
@@ -602,8 +597,8 @@ span {
     }
 
     .video_box video {
-        max-width: 12%;
-    }
+    max-width: 15%;
+}
     
 /*   mobile menu   */
     
