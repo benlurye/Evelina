@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+
+    <!-- Preloads for faster menu loading -->
+    <link rel="preload" as="image" href="images/menus/Cocktails.jpg">
+    <link rel="preload" as="image" href="images/menus/Dinner.jpg">
+    <link rel="preload" as="image" href="images/menus/Brunch.jpg">
+    <link rel="preload" as="image" href="images/menus/Lunch.jpg">
+    <link rel="preload" as="image" href="images/menus/WBTG_Beer.jpg">
+    <link rel="preload" as="image" href="images/menus/Wine_BTB.jpg">
+    <link rel="preload" as="image" href="images/menus/Dessert_Amaro_Mezcal.jpg">
+    <link rel="preload" as="image" href="images/menus/Brunch_Cocktails.jpg">
+    <!-- <link rel="preload" as="image" href="Breakfast.jpg"> -->
+
+
     <!-- CSS/Fonts -->
     
-    <link rel="stylesheet" href="menu.css">
+    <!-- <link rel="stylesheet" href="vendor/reset.css"> -->
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
 
     <!-- JS -->
 
-    <script src="https://unpkg.com/@supabase/supabase-js"></script>
-    <script src="menu.js"></script>
-    <script src="visiblemenuadd.js"></script>
+    <script src="vendor/jquery.js"></script>
+    <script src="app.js"></script>
 
 
     <title>Evelina  |  Menu</title>
@@ -66,6 +76,7 @@
     </header>
     
     <header class="index_mobile_nav">
+        
         <div class="row">
             <div class="col-9">
                 <img  src="images/logo1.gif">
@@ -104,247 +115,83 @@
                 </p>
             </div>
         </div>
-        
 </header>
-
-<!-- FOOD -->
-<div id="master_menu_box">
-    <div class="menu_links" id="menu_nav">
-        <div class="row">    
-            <a class="menu_link" data-menu-target="breakfast" id="breakfast_link">Breakfast</a>
-            <a class="menu_link" data-menu-target="lunch" id="lunch_link">Lunch</a>
-            <a class="menu_link" data-menu-target="dinner" id="dinner_link">Dinner</a>
-        </div>
-
-    </div>
-
-    <!-- BRUNCH -->
-    <div class="menu_links" id="brunch_nav">
         
-        <div class="row">
-            <a class="menu_link" data-menu-target="cocktails" id="cocktails_link">Cocktails</a>
-            <a class="menu_link" data-menu-target="brunch" id="brunch_link">Brunch</a>
-            <!-- <a id="special_menu_link">Mother's Day Brunch & Dinner`</a> -->
-            <a class="menu_link" data-menu-target="brunch_drinks" id="brunch_drinks_link">Brunch Beverages</a>
+        <!-- FOOD -->
+        <div class="menu_links" id="menu_nav">
+
+            <div class="row">    
+                <a id="breakfast_link">Breakfast</a>
+                <a id="lunch_link">Lunch</a>
+                <a id="between_link">In Between</a>
+                <a id="dinner_link">Dinner</a>
+            </div>
+
         </div>
-    </div>
 
-    <!-- DRINKS -->
-    <div class="menu_links" id="drinks_nav">
-        <div class="row">
-            <a class="menu_link" data-menu-target="dessert" id="dessert_digestifs_link">Dessert <span>|</span> Mezcal <span>|</span> Amaro</a>
-            <a class="menu_link" data-menu-target="wbtg" id="BTG_link">Wine by the Glass <span>|</span> Beer</a>
-            <a class="menu_link" data-menu-target="wbtb" id="BTB_link">Wine by the Bottle</a>
+        <!-- BRUNCH -->
+        <div class="menu_links" id="brunch_nav">
+            
+            <div class="row">
+                <a id="cocktails_link">Cocktails</a>
+                <a id="brunch_link">Brunch</a>
+                <a id="brunch_drinks_link">Brunch Drinks</a>
+            </div>
         </div>
-    </div>
-</div>
 
-
-
-<div class="current_menu">
-    <div id="breakfast" class="live-menu" data-menu-live="breakfast">
-
-      <h5>Breakfast</h5>
-      <div class="served_on">
-        <p>Served M-F | 8-11:30 AM</p>
-      </div>
-      <div class="live-submenu" data-submenu-live="sweet">
-        <h6>Sweet</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="eggs savory">
-        <h6>Eggs | Savory</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="breakfast sides">
-        <h6>Sides</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="breakfast drinks">
-        <h6>Drinks</h6>
-      </div>
-      <div class="food_warning">
-        <p>Consuming raw or undercooked meats, poultry, seafood, shellfish, or  eggs may increase your risk of foodborne illness</p>
-      </div>
-    </div>
-    
-    <div id="lunch" class="live-menu" data-menu-live="lunch">
-
-      <h5>Lunch</h5>
-      <div class="served_on">
-        <p>Served M-F | 11:30 AM-3:30 PM</p>
-      </div>
-      <div class="live-submenu" data-submenu-live="lunch appetizers">
-        <h6>Appetizers</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="lunch pastas">
-        <h6>Pastas</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="lunch mains sandwiches">
-        <h6>Mains | Sandwiches</h6>
-      </div>
-      <div class="food_warning">
-        <p>Consuming raw or undercooked meats, poultry, seafood, shellfish, or  eggs may increase your risk of foodborne illness</p>
-      </div>
-    </div>
-    
-    <div id="dinner" class="live-menu" data-menu-live="dinner">
-
-      <h5>Dinner</h5>
-      <p id="current_date"></p>
-      <div class="live-submenu" data-submenu-live="cheeses meats">
-        <h6>Cheese | Charcuterie</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="dinner appetizers">
-        <h6>Appetizers</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="dinner pastas grains">
-        <h6>Pastas | Grains</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="dinner mains">
-        <h6>Mains</h6>
-      </div>
-      <div class="food_warning">
-        <p>Consuming raw or undercooked meats, poultry, seafood, shellfish, or  eggs may increase your risk of foodborne illness</p>
-      </div>
-
-    </div>
-    
-    <div id="brunch" class="live-menu" data-menu-live="brunch">
-
-      <h5>Brunch</h5>
-      <div class="served_on">
-        <p>Served Sat-Sun</p>
-      </div>
-      <div class="live-submenu" data-submenu-live="brunch sweets">
-        <h6>Sweets</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="brunch plates">
-        <h6>Brunch Plates</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="lunch plates">
-        <h6>Lunch Plates</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="brunch sandwiches">
-        <h6>Sandwiches</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="brunch extras">
-        <h6>Extras</h6>
-      </div>
-      <div class="food_warning">
-        <p>Consuming raw or undercooked meats, poultry, seafood, shellfish, or  eggs may increase your risk of foodborne illness</p>
-      </div>
-
-    </div>
-    
-    <div id="dessert" class="live-menu" data-menu-live="dessert">
-
-      <h5>Dessert</h5>
-      <div class="live-submenu" data-submenu-live="dolci">
-        <h6>Dolci</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="gelato sorbet">
-        <h6>Homemade Gelato & Sorbet</h6> <div class="price_guide">3 / scoop</div>
-      </div>
-      
-      <div id="amaro" class="live-menu active" data-menu-live="amaro">
-        <h5>Digestifs</h5>
-        <div class="live-submenu" data-submenu-live="amaro">
-          <h6>Amaro</h6>
+        <!-- <div class="menu_links" id="brunch_nav">
+            
+            <div class="row">
+                <a id="special_menu_link">Thanksgiving</a>
+            </div>
+        </div> -->
+        
+        <!-- DRINKS -->
+        <div class="menu_links" id="drinks_nav">
+            <div class="row">
+                <a id="dessert_digestifs_link">Dessert <span>|</span> Mezcal <span>|</span> Amaro</a>
+                <a id="BTG_link">Wine by the Glass <span>|</span> Beer</a>
+                <a id="BTB_link">Wine by the Bottle</a>
+            </div>
         </div>
-        <div class="live-submenu" data-submenu-live="grappa">
-          <h6>Grappa</h6>
+
+        <!-- video area -->
+        <div class="video_box row">
+            
+            <video id="video1" controls muted poster="images/ceviche_frame_one.jpg">
+                <source src="images/ceviche.mp4#t=0,20" type="video/mp4">
+            Your browser does not support videos.
+            </video>  
+            
+            <video id="video2" controls autoplay muted poster="images/pasta_frame_one.jpg">
+                <source src="images/pasta.mp4#t=0,45" type="video/mp4">
+              Your browser does not support videos.
+            </video>
+              
+            <video id="video3" controls muted poster="images/peppers_frame_one.jpg">
+                <source src="images/peppers.mp4#t=0,48" type="video/mp4">
+            Your browser does not support videos.
+            </video>
+            
         </div>
-      </div>
-      
-      <div id="mezcal" class="live-menu active" data-menu-live="mezcal">
+            <div class="video_box row">
+                <a href="http://www.instagram.com/evelinarestaurant" target="_blank"><div class="insta-link-button"><img class="insta-logo" src="images/insta-logo.png"></div></a>
+            </div>
+        <div id="menu_area">
+            <p id="menu_avail_hours">Served All Day</p>
+            <img id="menu_active" src="images/menus/Cocktails.jpg">
+            <img id="menu_active_2" src="">
+        </div>
 
-        <h5>Mezcal</h5>
-        <div class="live-submenu" data-submenu-live="mezcal"></div>
-      </div>
+        <footer>
+            <p>
+            &copy; 2021 Evelina Restaurant
+            <br>
+            Designed and maintained by <a href="https://www.benlurye.com" target="_blank">Benjamin Lurye</a>
+        </footer>
     
-    </div>
-    
-    <div id="cocktails" class="live-menu active-menu" data-menu-live="cocktails">
-
-      <h5>Cocktails</h5>
-      <div class="price_guide">all cocktails $14 | bottle of 5 $56</div>
-      <div class="live-submenu" data-submenu-live="evelina classic cocktails">
-        <h6>Evelina Classic Cocktails</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="seasonal specials">
-        <h6>Seasonal Specials</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="mocktails">
-        <h6>Non-Alcoholic</h6>
-        <div class="price_guide">$9</div>
-      </div>
-    </div>
-    
-    <div id="brunch_drinks" class="live-menu" data-menu-live="brunch-drinks">
-      
-        <h5>Brunch Beverages</h5>
+    </body>
     
 
-        <div class="live-submenu" data-submenu-live="brunch cocktails">
-        <h6>Brunch Cocktails <span>served sat-sun</span></h6>
-        <div class="price_guide">all cocktails $14 | bottle of 5 $56</div>
-      </div>
-      <div class="live-submenu" data-submenu-live="coffee tea">
-        <h6>Coffee | Tea</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="beverages">
-        <h6>Beverages</h6>
-      </div>
-    </div>
-    
-    <div id="wbtg" class="live-menu" data-menu-live="wbtg">
 
-      <h5>Wine</h5> <div class="price_guide" id="wbtg_price_guide">glass / carafe / bottle</div>
-      <div class="live-submenu" data-submenu-live="btg white">
-        <h6>White</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="btg rose">
-        <h6>Ros&#233;</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="btg orange">
-        <h6>Orange</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="btg red">
-        <h6>Red</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="beer">
-        <h6>Beer | Cider</h6>
-      </div>
-    </div>
-    
-    <div id="wbtb" class="live-menu" data-menu-live="wbtb">
-
-      <h5>Wine List</h5>
-      <div class="live-submenu" data-submenu-live="btb sparkling">
-        <h6>Sparkling</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="btb white">
-        <h6>White</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="btb rose orange">
-        <h6>Ros&#233; | Orange</h6>
-      </div>
-      <div class="live-submenu" data-submenu-live="btb red">
-        <h6>Red</h6>
-      </div>
-    </div>
-    
-  </div>  
-  
-  <div class="observer_target"></div>
-  
-  <div class="top_anchor hide-me">
-    <a href="#top">
-      <img class="arrow" src="images/up-arrow.png">
-    </a>
-  </div> 
-
-  <footer>
-    <p class="footer_year"></p>
-    <p>Designed and maintained by <a href="https://www.benlurye.com" target="_blank">Benjamin Lurye</a></p>
-</footer>
-</body>
-</html>
+    </html>
