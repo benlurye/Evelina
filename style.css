@@ -430,12 +430,13 @@ span {
     margin: 20px auto 0 auto;
 }
 
-.video_box video {
+.video_box video,
+.video_box img {
     max-width: 15%;
 }
 
 .insta-logo {
-    width: 20px;
+    width: 20px!important;
 }
 
 /* Media Queries */
@@ -596,7 +597,8 @@ span {
         margin-top: 15px;
     }
 
-    .video_box video {
+    .video_box video,
+    .video_box img {
     max-width: 15%;
 }
     

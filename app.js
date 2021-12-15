@@ -45,8 +45,18 @@ $(document).ready(function() {
         $('#menu_avail_hours').css('display', 'none');
     });
 
-    $("#special_menu_link").on("click", function () {
-        $('#menu_active').attr('src', 'images/menus/Thanksgiving.jpg');
+    // $("#special_menu_link").on("click", function () {
+    //     $('#menu_active').attr('src', 'images/menus/Thanksgiving.jpg');
+    //     $('#menu_avail_hours').css('display', 'none');
+    // });
+
+    $("#xmas_menu_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Christmas.jpg');
+        $('#menu_avail_hours').css('display', 'none');
+    });
+    
+    $("#nye_menu_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/NYE.jpg');
         $('#menu_avail_hours').css('display', 'none');
     });
 
