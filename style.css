@@ -167,10 +167,6 @@ h4 {
     text-transform: uppercase;
 }
 
-.about .col-8 p {
-    width: 90vw;
-}
-
 .about {
     padding-bottom: 200px;
 }
@@ -454,6 +450,9 @@ span {
         margin: 0 auto;
     }    
     
+    .about .col-8 p {
+    width: 90vw;
+    }
     
     .index_desktop_nav {
         display: none;
