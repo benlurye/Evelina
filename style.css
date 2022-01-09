@@ -167,6 +167,14 @@ h4 {
     text-transform: uppercase;
 }
 
+.about .col-8 p {
+    width: 90vw;
+}
+
+.about {
+    padding-bottom: 200px;
+}
+
 .bio p span {
     font-size: inherit;
     color:rgb(8, 227, 247);
