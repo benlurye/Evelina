@@ -167,6 +167,10 @@ h4 {
     text-transform: uppercase;
 }
 
+.about {
+    padding-bottom: 200px;
+}
+
 .bio p span {
     font-size: inherit;
     color:rgb(8, 227, 247);
@@ -446,6 +450,9 @@ span {
         margin: 0 auto;
     }    
     
+    .about .col-8 p {
+    width: 90vw;
+    }
     
     .index_desktop_nav {
         display: none;
