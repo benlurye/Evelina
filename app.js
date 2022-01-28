@@ -55,8 +55,8 @@ $(document).ready(function() {
         $('#menu_avail_hours').css('display', 'none');
     });
     
-    $("#nye_menu_link").on("click", function () {
-        $('#menu_active').attr('src', 'images/menus/NYE.jpg');
+    $("#val_menu_link").on("click", function () {
+        $('#menu_active').attr('src', 'images/menus/Valentines.jpg');
         $('#menu_avail_hours').css('display', 'none');
     });
 
